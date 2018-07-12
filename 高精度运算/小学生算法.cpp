@@ -5,15 +5,14 @@ using namespace std;
 
 int main() {
     int a, b;
-    int count = 0;
+    int count = 0, carry = 0;
     while (cin >> a >> b) {
         if (!a && !b) return 0;
-        count = 0;
+        count = 0, carry = 0;
         // 这里使用!a && !b的时候出错了?
         while ((a != 0) && (b != 0)) {
-            if (a % 10 + b % 10 > 9) {
-                count++;
-            }
+            carry = (carry + a % 10 + b % 10) > 9 ? 1 : 0;
+            count += carry;
             a /= 10;
             b /= 10;
         }
