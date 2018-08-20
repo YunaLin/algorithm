@@ -7,6 +7,7 @@ struct TreeNode {
 			val(x), left(NULL), right(NULL) {
 	}
 };*/
+// 使用队列实现广度优先搜索
 vector<int> PrintFromTopToBottom(TreeNode* root) {
     queue<TreeNode*> que;
     vector<int> result;
