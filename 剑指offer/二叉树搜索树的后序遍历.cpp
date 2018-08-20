@@ -2,6 +2,7 @@
 // 首先序列的最后一个数字是root，找到第一个比root大的数字，其之前为左子树
 // 其之后为右子树，如果右子树出现比root小的则返回false
 // 递归进行判断，需要注意一开始的输入如果是空的话返回false
+// 递归实现
 bool VerifySquenceOfBST(vector<int> sequence) {
     int n = sequence.size();
     if (n == 0) return false;
