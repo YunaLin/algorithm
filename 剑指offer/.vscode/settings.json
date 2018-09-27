@@ -4,6 +4,9 @@
         "iostream": "cpp",
         "tuple": "cpp",
         "*.tcc": "cpp",
-        "system_error": "cpp"
+        "system_error": "cpp",
+        "initializer_list": "cpp",
+        "utility": "cpp",
+        "vector": "cpp"
     }
 }
